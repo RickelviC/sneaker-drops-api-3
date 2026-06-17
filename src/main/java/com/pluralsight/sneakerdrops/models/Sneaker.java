@@ -11,7 +11,7 @@ public class Sneaker {
     )
     private Long id;
     private String model;
-    private double price;
+    private Double price;
     private int releaseYear;
 
     @ManyToOne(optional = false)
@@ -20,7 +20,7 @@ public class Sneaker {
     public Sneaker() {
     }
 
-    public Sneaker(String model, double price, int releaseYear, Brand brand) {
+    public Sneaker(String model, Double price, int releaseYear, Brand brand) {
         this.model = model;
         this.price = price;
         this.releaseYear = releaseYear;
